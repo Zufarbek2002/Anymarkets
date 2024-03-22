@@ -20,7 +20,6 @@ const ProductsComp = ({name}) => {
   };
   useEffect(() => {
     fetchApi();
-    // console.log(location.pathname.length);
   }, []);
   useEffect(() => {
     setFiltered(products);
@@ -71,7 +70,7 @@ const ProductsComp = ({name}) => {
             <thead>
               <tr className="table__title">
                 <th>#No</th>
-                <th>Name</th>
+                <th className="name">Name</th>
                 <th className="rating">Rating</th>
                 <th className="brand">Brand</th>
                 <th>Price</th>
@@ -86,7 +85,7 @@ const ProductsComp = ({name}) => {
               {filtered.map((data, index) => (
                 <tr key={data.id} className="table__body">
                   <td>{index + 1}</td>
-                  <td>{data.title}</td>
+                  <td className="name">{data.title}</td>
                   <td className="rating">{data.rating}</td>
                   <td className="brand">{data.brand}</td>
                   <td>{data.price}$</td>

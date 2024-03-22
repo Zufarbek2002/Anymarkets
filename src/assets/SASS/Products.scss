@@ -45,6 +45,7 @@
 
 .products__data_box {
     margin-top: 39px;
+    overflow-x: scroll;
 }
 
 .products__table {
@@ -94,13 +95,15 @@
     border-radius: 6px;
 }
 
+@media screen and (max-width: 650px) {
+    .btn_box {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 620px) {
     .products {
         margin-left: 0;
-    }
-
-    .btn_box {
-        flex-direction: column;
     }
 }
 
@@ -120,13 +123,13 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 420px) {
     .stock {
         display: none;
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 370px) {
     .brand {
         display: none;
     }

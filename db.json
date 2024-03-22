@@ -532,15 +532,6 @@
         "https://cdn.dummyjson.com/product-images/30/3.jpg",
         "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg"
       ]
-    },
-    {
-      "id": "4bfc",
-      "title": "redmi",
-      "brand": "fjalk",
-      "rating": "4",
-      "description": "mm",
-      "price": "44",
-      "stock": "4"
     }
   ],
   "total": 100,

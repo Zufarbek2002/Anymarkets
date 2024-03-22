@@ -534,22 +534,13 @@
       ]
     },
     {
-      "id": "663d",
+      "id": "4bfc",
       "title": "redmi",
-      "description": "redmi",
-      "price": "234",
-      "rating": "5",
-      "stock": "100",
-      "brand": "redmi"
-    },
-    {
-      "id": "39ae",
-      "title": "samsung",
-      "description": "samsung",
-      "price": "200",
-      "rating": "5",
-      "stock": "100",
-      "brand": "samsung"
+      "brand": "fjalk",
+      "rating": "4",
+      "description": "mm",
+      "price": "44",
+      "stock": "4"
     }
   ],
   "total": 100,

@@ -3,9 +3,9 @@ import FooterAddComp from "../components/FooterAddComp";
 import NewProduct from "../components/NewProduct";
 import axios from "axios";
 
-const Add = () => {
-  const [name, setName] = useState({});
+const Add = ({name, setName}) => {
   const [bool, setBool] = useState(false);
+
   const handleSubmit = (e) => {
     setName({ ...name, [e.target.id]: e.target.value });
   };

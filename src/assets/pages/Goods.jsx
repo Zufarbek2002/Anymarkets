@@ -1,13 +1,13 @@
-import FooterHomeComp from "../components/FooterHomeComp"
-import ProductsComp from "../components/ProductsComp"
+import FooterHomeComp from "../components/FooterHomeComp";
+import ProductsComp from "../components/ProductsComp";
 
-const Goods = () => {
+const Goods = ({ name }) => {
   return (
     <div>
-        <ProductsComp />
-        <FooterHomeComp />
+      <ProductsComp name={name} />
+      <FooterHomeComp />
     </div>
-  )
-}
+  );
+};
 
-export default Goods
+export default Goods;

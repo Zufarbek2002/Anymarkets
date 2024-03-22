@@ -4,9 +4,9 @@ import { useParams } from "react-router-dom";
 import EditProduct from "../components/EditProduct";
 import EditAddComp from "../components/EditAddComp";
 
-const Edit = ({setLocation}) => {
+const Edit = ({ setLocation }) => {
   const { id } = useParams();
-  const [product, setProduct] = useState([])
+  const [product, setProduct] = useState([]);
   const [name, setName] = useState({});
 
   const fetchApi = async () => {
@@ -17,7 +17,7 @@ const Edit = ({setLocation}) => {
 
   useEffect(() => {
     fetchApi();
-    setLocation(location.pathname.length)
+    setLocation(location.pathname.length);
   }, []);
 
   const data = {
@@ -34,16 +34,14 @@ const Edit = ({setLocation}) => {
     setName(data);
   }, [product]);
 
-
   const handleSubmit = (e) => {
     setName({ ...name, [e.target.id]: e.target.value });
   };
 
-
   return (
     <div>
-      <EditProduct form={'connect'} name={name} handleSubmit={handleSubmit}/>
-      <EditAddComp name={name} form={'connect'} id={id}/>
+      <EditProduct form={"connect"} name={name} handleSubmit={handleSubmit} />
+      <EditAddComp name={name} form={"connect"} id={id} />
     </div>
   );
 };

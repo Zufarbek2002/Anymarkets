@@ -7,19 +7,19 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-        <div className="logo_box">
-          <img src={logo} alt="logo image" />
+      <div className="logo_box">
+        <img src={logo} alt="logo image" />
+      </div>
+      <NavLink to="/">
+        <div className="link_box">
+          <img src={settings} alt="settings image" />
         </div>
-        <NavLink to="/">
-          <div className="link_box">
-            <img src={settings} alt="settings image" />
-          </div>
-        </NavLink>
-        <NavLink to="/add">
-          <div className="link_box">
-            <img src={add} alt="add page image" />
-          </div>
-        </NavLink>
+      </NavLink>
+      <NavLink to="/add">
+        <div className="link_box">
+          <img src={add} alt="add page image" />
+        </div>
+      </NavLink>
     </div>
   );
 };

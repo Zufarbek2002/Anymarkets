@@ -2,7 +2,6 @@
 import "../SASS/NewProduct.scss";
 
 const EditProduct = ({ name, handleSubmit, form }) => {
-
   return (
     <div className="new_product">
       <div className="container new_product__container">

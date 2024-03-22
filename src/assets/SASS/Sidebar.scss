@@ -15,14 +15,13 @@
 }
 a.active{
     background-color: #6C6DE5;
-    // padding: 15px 14px;
     border-radius: 6px;
 }
 .link_box{
     padding: 15px 16px 11px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 634px) {
     .sidebar{
         display: none;
     }

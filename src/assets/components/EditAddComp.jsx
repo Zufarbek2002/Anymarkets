@@ -4,7 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const EditAddComp = ({ form, name, id }) => {
-  const [bool, setBool] = useState(false)
+  const [bool, setBool] = useState(false);
 
   const handleEdit = async () => {
     if (name.title && name.brand && name.rating && name.description) {
@@ -12,11 +12,11 @@ const EditAddComp = ({ form, name, id }) => {
     }
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     if (name.title && name.brand && name.rating && name.description) {
-      setBool(true)
+      setBool(true);
     }
-  },[name])
+  }, [name]);
 
   return (
     <div className="footer_add">

@@ -95,19 +95,19 @@
     border-radius: 6px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 675px) {
     .btn_box {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 634px) {
     .products {
         margin-left: 0;
     }
 }
 
-@media screen and (max-width: 524px) {
+@media screen and (max-width: 555px) {
     .rating {
         display: none;
     }
@@ -123,13 +123,13 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 445px) {
     .stock {
         display: none;
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 392px) {
     .brand {
         display: none;
     }

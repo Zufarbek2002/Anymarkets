@@ -3,7 +3,7 @@ import FooterAddComp from "../components/FooterAddComp";
 import NewProduct from "../components/NewProduct";
 import axios from "axios";
 
-const Add = ({name, setName, setLocation}) => {
+const Add = ({ name, setName, setLocation }) => {
   const [bool, setBool] = useState(false);
 
   const handleSubmit = (e) => {
@@ -14,14 +14,14 @@ const Add = ({name, setName, setLocation}) => {
       await axios.post("http://localhost:3000/products", name);
     }
   };
-  useEffect(()=>{
+  useEffect(() => {
     if (name.title && name.brand && name.rating && name.description) {
-      setBool(true)
+      setBool(true);
     }
-  },[name])
-  useEffect(()=>{
+  }, [name]);
+  useEffect(() => {
     setLocation(location.pathname.length);
-  },[])
+  }, []);
   return (
     <div>
       <NewProduct handleSubmit={handleSubmit} form="form" />

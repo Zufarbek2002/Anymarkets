@@ -7,7 +7,7 @@ import del from "../images/Delete.svg";
 import Loading from "./Loading";
 import { NavLink } from "react-router-dom";
 
-const ProductsComp = ({name}) => {
+const ProductsComp = ({ name }) => {
   const [products, setProducts] = useState([]);
   const [filtered, setFiltered] = useState(products);
   const [loading, setLoading] = useState(false);
@@ -26,7 +26,7 @@ const ProductsComp = ({name}) => {
   }, [products]);
 
   useEffect(() => {
-    fetchApi()
+    fetchApi();
   }, [name]);
 
   const handleSearch = (e) => {

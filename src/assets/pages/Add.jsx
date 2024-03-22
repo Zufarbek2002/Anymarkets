@@ -3,7 +3,7 @@ import FooterAddComp from "../components/FooterAddComp";
 import NewProduct from "../components/NewProduct";
 import axios from "axios";
 
-const Add = ({name, setName}) => {
+const Add = ({name, setName, setLocation}) => {
   const [bool, setBool] = useState(false);
 
   const handleSubmit = (e) => {
@@ -19,6 +19,9 @@ const Add = ({name, setName}) => {
       setBool(true)
     }
   },[name])
+  useEffect(()=>{
+    setLocation(location.pathname.length);
+  },[])
   return (
     <div>
       <NewProduct handleSubmit={handleSubmit} form="form" />

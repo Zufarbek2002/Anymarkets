@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import EditProduct from "../components/EditProduct";
 import EditAddComp from "../components/EditAddComp";
 
-const Edit = () => {
+const Edit = ({setLocation}) => {
   const { id } = useParams();
   const [product, setProduct] = useState([])
   const [name, setName] = useState({});
@@ -17,6 +17,7 @@ const Edit = () => {
 
   useEffect(() => {
     fetchApi();
+    setLocation(location.pathname.length)
   }, []);
 
   const data = {

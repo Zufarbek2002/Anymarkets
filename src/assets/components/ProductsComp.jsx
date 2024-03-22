@@ -20,6 +20,7 @@ const ProductsComp = ({name}) => {
   };
   useEffect(() => {
     fetchApi();
+    // console.log(location.pathname.length);
   }, []);
   useEffect(() => {
     setFiltered(products);

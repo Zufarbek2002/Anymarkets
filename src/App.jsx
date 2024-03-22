@@ -8,15 +8,16 @@ import { useState } from "react";
 
 const App = () => {
   const [name, setName] = useState({});
+  const [location, setLocation] = useState(0)
 
   return (
     <Router>
       <Sidebar />
-      <Header />
+      <Header location={location}/>
       <Routes>
-        <Route path="/" element={<Goods name={name} />} />
-        <Route path="/add" element={<Add name={name} setName={setName} />} />
-        <Route path="/edit/:id" element={<Edit />} />
+        <Route path="/" element={<Goods name={name} setLocation={setLocation}/>} />
+        <Route path="/add" element={<Add name={name} setName={setName} setLocation={setLocation}/>} />
+        <Route path="/edit/:id" element={<Edit setLocation={setLocation}/>} />
       </Routes>
     </Router>
   );
